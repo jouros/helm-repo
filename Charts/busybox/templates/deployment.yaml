@@ -1,0 +1,68 @@
+apiVersion: batch/v1
+kind: Job 
+metadata:
+  name: {{ include "busybox.fullname" . }}
+  labels:
+    {{- include "busybox.labels" . | nindent 4 }}
+spec:
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "busybox.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.port }} 
+              protocol: TCP
+          command:
+          - /bin/sh
+          - -c
+          - sleep {{ .Values.busyboxruntimeinsecs }} 
+          env:
+          - name: {{ .Values.env.name1 }} 
+            value: {{ .Values.env.value1 | quote }} 
+          - name: {{  .Values.env.name2 }} 
+            value: {{ .Values.env.value2 | quote }} 
+          - name: {{ .Values.env.name3 }}
+            value: {{ .Values.env.value3 | quote }}
+          livenessProbe:
+            exec:
+              command:
+              - cat
+              - /dev/null
+          readinessProbe:
+            exec: 
+              command:
+              - cat
+              - /dev/null
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      restartPolicy: {{ .Values.restartPolicy }}
