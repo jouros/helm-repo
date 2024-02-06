@@ -3,7 +3,7 @@ entries:
   busybox:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-02-05T16:33:07.762117901+02:00"
+    created: "2024-02-06T15:48:34.104794716+02:00"
     description: A Helm chart for Kubernetes
     digest: c9bb20c26105b0cf194d291febf26df2e7417b2f990302145b48c51f844b4f5c
     name: busybox
@@ -13,13 +13,23 @@ entries:
     version: 0.0.1
   mypythonapp:
   - apiVersion: v2
-    appVersion: 0.0.1
-    created: "2024-02-05T16:33:07.762378949+02:00"
+    appVersion: 0.0.2
+    created: "2024-02-06T15:48:34.105369257+02:00"
     description: A Helm chart for Kubernetes
-    digest: 809f60b454e20b2c8bbcf0b06a7af872cb0ba693fed55558cc71961917918c46
+    digest: 75aa1dd8aa3207c48e06cb02dc1c513deb26878ee30aececb6493c71ed3c6386
+    name: mypythonapp
+    type: application
+    urls:
+    - Packages/mypythonapp-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-02-06T15:48:34.105093895+02:00"
+    description: A Helm chart for Kubernetes
+    digest: f280ea16bb22282980a75b771228c9d13ed6db33d089a05d1b1ea0fc16195692
     name: mypythonapp
     type: application
     urls:
     - Packages/mypythonapp-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-05T16:33:07.761628864+02:00"
+generated: "2024-02-06T15:48:34.098338975+02:00"
