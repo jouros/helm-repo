@@ -3,7 +3,7 @@ entries:
   busybox:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-02-08T17:27:13.263905876+02:00"
+    created: "2024-02-09T16:06:59.29540565+02:00"
     description: A Helm chart for Kubernetes
     digest: c9bb20c26105b0cf194d291febf26df2e7417b2f990302145b48c51f844b4f5c
     name: busybox
@@ -14,7 +14,17 @@ entries:
   mypythonapp:
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-08T17:27:13.264914729+02:00"
+    created: "2024-02-09T16:06:59.299238124+02:00"
+    description: A Helm chart for Kubernetes
+    digest: d6c8429b77da6233987f8e717497578cdf228ecd25ea10f2df52e343308f8f0c
+    name: mypythonapp
+    type: application
+    urls:
+    - Packages/mypythonapp-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2024-02-09T16:06:59.298946408+02:00"
     description: A Helm chart for Kubernetes
     digest: f5e6258d487d448701bec246806954260385111d379b5d85585310ebde7fb968
     name: mypythonapp
@@ -24,7 +34,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-08T17:27:13.264679915+02:00"
+    created: "2024-02-09T16:06:59.298383148+02:00"
     description: A Helm chart for Kubernetes
     digest: f361afd8be715e2be708199a300e386569e3a0d06426205a06fa24b240009e7f
     name: mypythonapp
@@ -34,7 +44,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-08T17:27:13.264434783+02:00"
+    created: "2024-02-09T16:06:59.29649737+02:00"
     description: A Helm chart for Kubernetes
     digest: 75aa1dd8aa3207c48e06cb02dc1c513deb26878ee30aececb6493c71ed3c6386
     name: mypythonapp
@@ -44,7 +54,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2024-02-08T17:27:13.26418483+02:00"
+    created: "2024-02-09T16:06:59.295977422+02:00"
     description: A Helm chart for Kubernetes
     digest: f280ea16bb22282980a75b771228c9d13ed6db33d089a05d1b1ea0fc16195692
     name: mypythonapp
@@ -52,4 +62,4 @@ entries:
     urls:
     - Packages/mypythonapp-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-08T17:27:13.263592265+02:00"
+generated: "2024-02-09T16:06:59.294813003+02:00"
