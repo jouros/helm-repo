@@ -3,7 +3,7 @@ entries:
   busybox:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-02-13T16:20:39.995673301+02:00"
+    created: "2024-02-14T16:22:19.407495491+02:00"
     description: A Helm chart for Kubernetes
     digest: c9bb20c26105b0cf194d291febf26df2e7417b2f990302145b48c51f844b4f5c
     name: busybox
@@ -14,7 +14,17 @@ entries:
   mypythonapp:
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-13T16:20:39.998075124+02:00"
+    created: "2024-02-14T16:22:19.410436904+02:00"
+    description: A Helm chart for Kubernetes
+    digest: f183eae15f2c74cdc95cac9c4b9ac9fb57ffb30af72660aa2e31dd5618650dcf
+    name: mypythonapp
+    type: application
+    urls:
+    - Packages/mypythonapp-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2024-02-14T16:22:19.410191006+02:00"
     description: A Helm chart for Kubernetes
     digest: 3ba688e7949eeddb5cf3a9dae84425f8c12858ba1bbedc647ea76e26f1774018
     name: mypythonapp
@@ -24,7 +34,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-13T16:20:39.997841321+02:00"
+    created: "2024-02-14T16:22:19.409784917+02:00"
     description: A Helm chart for Kubernetes
     digest: c8765753c64df976b4c7fb19bbf386cdf4fd1b22b471b4141019fe049de06991
     name: mypythonapp
@@ -34,7 +44,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-13T16:20:39.99758655+02:00"
+    created: "2024-02-14T16:22:19.409378782+02:00"
     description: A Helm chart for Kubernetes
     digest: f5e6258d487d448701bec246806954260385111d379b5d85585310ebde7fb968
     name: mypythonapp
@@ -44,7 +54,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-13T16:20:39.997129112+02:00"
+    created: "2024-02-14T16:22:19.408904272+02:00"
     description: A Helm chart for Kubernetes
     digest: f361afd8be715e2be708199a300e386569e3a0d06426205a06fa24b240009e7f
     name: mypythonapp
@@ -54,7 +64,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-02-13T16:20:39.996680612+02:00"
+    created: "2024-02-14T16:22:19.408457388+02:00"
     description: A Helm chart for Kubernetes
     digest: 75aa1dd8aa3207c48e06cb02dc1c513deb26878ee30aececb6493c71ed3c6386
     name: mypythonapp
@@ -64,7 +74,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2024-02-13T16:20:39.996207934+02:00"
+    created: "2024-02-14T16:22:19.407985039+02:00"
     description: A Helm chart for Kubernetes
     digest: f280ea16bb22282980a75b771228c9d13ed6db33d089a05d1b1ea0fc16195692
     name: mypythonapp
@@ -72,4 +82,4 @@ entries:
     urls:
     - Packages/mypythonapp-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-13T16:20:39.990840506+02:00"
+generated: "2024-02-14T16:22:19.407049278+02:00"
